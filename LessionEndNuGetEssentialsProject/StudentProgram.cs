@@ -8,6 +8,7 @@ namespace LessionEndNuGetEssentialsProject
     {
         public static void InputStudent(Student[] students)
         {
+            Console.WriteLine("\nEnter Student Details");
             for (int i = 0; i < students.Length; i++)
             {
                 Console.WriteLine($"\nEnter Student {i + 1} Name");

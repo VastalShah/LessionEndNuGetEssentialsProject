@@ -8,6 +8,7 @@ namespace LessionEndNuGetEssentialsProject
     {
         public static void InputSubject(Subject[] subjects)
         {
+            Console.WriteLine("\nEnter subject Details");
             for (int i = 0; i < subjects.Length; i++)
             {
                 Console.WriteLine($"\nEnter Subject {i + 1} Name:");
@@ -22,7 +23,7 @@ namespace LessionEndNuGetEssentialsProject
             string subjectDetails = "";
             foreach (Subject subject in subjects)
             {
-                subjectDetails += "Name: " + subject.Name + ", Class and Section: " + subject.Code + "\n";
+                subjectDetails += "Name: " + subject.Name + ", Code: " + subject.Code + "\n";
             }
             return subjectDetails;
         }
